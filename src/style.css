@@ -1,0 +1,263 @@
+/* Reset de estilos padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+/* Barra de navegação */
+.navbar {
+    background-color: rgba(34, 70, 97);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 36px;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.menu a:hover {
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+/* Menu responsivo */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #3E7AA7;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+    .section-container {
+    flex-direction: column-reverse; /* Inverte a ordem das divs para ficar section-right embaixo da section-left */
+    }
+
+    .section-left {
+    width: 100%;
+    height: auto; /* Altura da div */
+    justify-content: center;
+    align-items: center;
+}
+    .section-left h1{
+        font-size: 34px;
+        color: #fff;
+    }
+    .section-left p{
+        font-size: 18px;
+        background-color: #224661;
+        color: #BFCAD2;
+    }
+    .section-left button{
+        margin-top: 20px;
+    }
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 12px;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        margin-right: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: transparent;
+        color: #3498db;
+    }
+    /* Estilos para o botão "Assistir Vídeo" */
+    .watch-video-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #3498db;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .watch-video-btn:hover {
+        background-color: #3498db;
+        color: #fff;
+    }
+    .watch-video-btn i {
+        margin-right: 10px;
+    }
+
+
+    .section-right{
+        width: 100%;
+        height: auto; /* Altura da div */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Oculta parte da imagem fora da div */
+    }
+
+
+    .section-right img {
+        max-width: 100%;
+        height: auto;
+        animation: moveUpDown 1.5s infinite alternate; 
+    }
+
+}
+
+
+
+
+/* Seção abaixo da barra de navegação */
+.section-container {
+    background-color: #224661;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 100px; /* Ajusta o espaço para a barra de navegação */
+    height: 100vh;
+    justify-content: center;
+}
+.section-left, .section-right {
+    flex: 1;
+    padding: 20px;
+}
+.section-left {
+    width: 100%;
+    height: auto; /* Altura da div */
+    justify-content: center;
+    align-items: center;
+}
+.section-left h1{
+    margin-top: 25%;
+    font-size: 44px;
+    color: #fff;
+}
+.section-left p{
+    margin-top: 40px;
+    font-size: 18px;
+    background-color: #224661;
+    color: #BFCAD2;
+}
+.section-left button{
+    margin-top: 20px;
+}
+.cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cta-button:hover {
+    background-color: transparent;
+    color: #3498db;
+}
+/* Estilos para o botão "Assistir Vídeo" */
+.watch-video-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #3498db;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+.watch-video-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.watch-video-btn i {
+    margin-right: 10px;
+}
+
+
+.section-right{
+    width: 100%;
+    height: auto; /* Altura da div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta parte da imagem fora da div */
+}
+
+
+.section-right img {
+    max-width: 100%;
+    height: auto;
+    animation: moveUpDown 1.5s infinite alternate; 
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Começa sem deslocamento vertical */
+    }
+    100% {
+        transform: translateY(-10px); /* Desloca 10 pixels para cima */
+    }
+}
+

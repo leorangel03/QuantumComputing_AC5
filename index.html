@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuantumComputing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+    <!--menu de navegação-->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Computação Quântica</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Imersão</a></li>
+            <li><a href="#">Aplicações</a></li>
+            <li><a href="#">Desafios</a></li>
+            <li><a href="#">Teoria</a></li>
+            <li><a href="#">Comunidade</a></li>
+        </ul>
+    </nav>
+    <div class="section-container">
+        <!--div dos textos e botoes-->
+        <div class="section-left">
+            <h1>Explorando novos horizontes na era da computação</h1>
+            <p>Usando princípios quânticos para processar informações, a computação quântica visa resolver problemas complexos de forma mais eficiente que computadores clássicos.</p>
+            <button class="cta-button">Entenda...</button>
+            <a href="https://www.youtube.com/watch?v=yLvetNt6StY">
+                <button class="watch-video-btn">
+                    <i class="fas fa-play"></i>Vídeo explicativo
+                </button>
+            </a>
+        </div>
+        <!--div da imagem-->
+        <div class="section-right">
+            <img src="src/img/qc2.png" alt="Imagem">
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
