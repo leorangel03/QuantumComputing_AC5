@@ -1,14 +1,12 @@
-/* Reset de estilos padrão */
+/* ==================================== INICIO DO MENU DE NAVEGAÇÃO ==================================== */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
 }
-/* Barra de navegação */
 .navbar {
     background-color: rgba(34, 70, 97);
     color: #fff;
@@ -53,14 +51,18 @@ body {
     text-decoration: none;
     color: #3498db;
 }
+/* ==================================== FIM DO MENU DE NAVEGAÇÃO ==================================== */
 
-/* Seção abaixo da barra de navegação */
+
+
+/* ==================================== INICIO CONTAINER ==================================== */
+/* Seção abaixo da barra de navegação - 'div mae' */
 .section-container {
     background-color: #224661;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    padding-top: 100px; /* Ajusta o espaço para a barra de navegação */
+    padding-top: 100px; 
     height: 100vh;
     justify-content: center;
 }
@@ -68,9 +70,10 @@ body {
     flex: 1;
     padding: 20px;
 }
+/* Div dos textos e buttons*/
 .section-left {
     width: 100%;
-    height: auto; /* Altura da div */
+    height: auto; 
     justify-content: center;
     align-items: center;
 }
@@ -103,7 +106,6 @@ body {
     background-color: transparent;
     color: #3498db;
 }
-/* Estilos para o botão "Assistir Vídeo" */
 .watch-video-btn {
     padding: 10px 20px;
     font-size: 18px;
@@ -121,8 +123,7 @@ body {
 .watch-video-btn i {
     margin-right: 10px;
 }
-
-
+/* Div da IMG */
 .section-right{
     width: 100%;
     height: auto; /* Altura da div */
@@ -131,14 +132,11 @@ body {
     align-items: center;
     overflow: hidden; /* Oculta parte da imagem fora da div */
 }
-
-
 .section-right img {
     max-width: 100%;
     height: auto;
     animation: moveUpDown 1.5s infinite alternate; 
 }
-
 @keyframes moveUpDown {
     0% {
         transform: translateY(0); /* Começa sem deslocamento vertical */
@@ -147,18 +145,31 @@ body {
         transform: translateY(-10px); /* Desloca 10 pixels para cima */
     }
 }
+/* ==================================== FIM CONTAINER ==================================== */
 
 
-
-/* Menu responsivo */
+/* ==================================== INICIO LAYOUT RESPONSIVO ==================================== */
 @media screen and (max-width: 768px) {
+    /* Inicio Menu responsivo */
+    .logo h1 {
+        margin: 0;
+        padding-right: 40%;
+        font-size: 36px;
+    }
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #3E7AA7;
+        background-color: transparent;
         position: absolute;
         top: 100px;
-        left: 0;
+        left: 80%;
+        width: 20%;
+        border-radius: 10px;
+        border: solid 2px #fff;
+    }
+    .menu li {
+        text-align: left;
+        border: solid 0.5px #fff;
         width: 100%;
     }
     .menu.active {
@@ -175,100 +186,97 @@ body {
     }
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
+    }/* Fim Menu responsivo */
 
-
+    /* Inicio Divs do Index */
     .section-container {
-    background-color: #224661;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 0;
-    padding-top: 0; /* Ajusta o espaço para a barra de navegação */
-    height: 100vh;
-    margin-top: 2%;
-    justify-content: center;
-}
-.section-left, .section-right {
-    flex: 0;
-    padding: 20px;
-}
-.section-left {
-    width: 100%;
-    height: 100vh; /* Altura da div */
-    justify-content: center;
-    align-items: center;
-}
-.section-left h1{
-    margin-top: 0;
-    font-size: 32px;
-    color: #fff;
-}
-.section-left p{
-    margin-top: 40px;
-    font-size: 12px;
-    background-color: #224661;
-    color: #BFCAD2;
-}
-.section-left button{
-    margin-top: 5%;
-}
-.cta-button {
-    padding: 10px 20px;
-    font-size: 12px;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fff;
-    margin-right: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Estilos para o botão "Assistir Vídeo" */
-.watch-video-btn {
-    padding: 10px 20px;
-    font-size: 12px;
-    border: 2px solid #3498db;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #3498db;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
-}
-.watch-video-btn:hover {
-    background-color: transparent;
-    color: #3498db;
-}
-.watch-video-btn i {
-    margin-right: 10px;
-}
-
-
-.section-right{
-    margin-top: 20%;
-    width: 100%;
-    height: 100vh; /* Altura da div */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.section-right img {
-    max-width: 100%;
-    height: auto;
-    animation: moveUpDown 1.5s infinite alternate; 
-}
-
-@keyframes moveUpDown {
-    0% {
-        transform: translateY(0); /* Começa sem deslocamento vertical */
+        background-color: #224661;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        padding: 0;
+        padding-top: 30%;
+        height: 100vh;
+        margin-top: 0%;
+        justify-content: start;
     }
-    100% {
-        transform: translateY(-10px); /* Desloca 10 pixels para cima */
+    .section-left, .section-right {
+        flex: 0;
+        padding: 20px;
     }
-}
+    .section-left {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-left h1{
+        margin-top: 0;
+        font-size: 32px;
+        color: #fff;
+    }
+    .section-left p{
+        margin-top: 40px;
+        font-size: 12px;
+        background-color: #224661;
+        color: #BFCAD2;
+    }
+    .section-left button{
+        margin-top: 5%;
+    }
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 12px;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        margin-right: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .watch-video-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #3498db;
+        background-color: transparent;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .watch-video-btn:hover {
+        background-color: transparent;
+        color: #3498db;
+    }
+    .watch-video-btn i {
+        margin-right: 10px;
+    }
+    .section-right{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+    .section-right img {
+        margin-top: 0%;
+        max-width: 100%;
+        height: auto;
+        animation: moveUpDown 1.5s infinite alternate; 
+    }
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }/* Fim Divs do Index */
+  
 
-    
 }
+/* ==================================== FIM LAYOUT RESPONSIVO ==================================== */
