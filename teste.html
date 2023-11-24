@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+ 
+        .box {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+ 
+        .box h1 {
+            margin-bottom: 10px;
+        }
+ 
+        .box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+ 
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+ 
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Div Estilizada</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Como funciona?</h1>
+            <p>A computação quântica aproveita os princípios da superposição e emaranhamento para realizar cálculos de maneira exponencialmente mais eficiente do que os computadores clássicos. Na superposição, bits quânticos, ou qubits, podem existir em múltiplos estados simultaneamente, permitindo que a informação seja processada de maneira paralela. Isso possibilita a realização de operações complexas de forma mais rápida do que os bits clássicos, que existem em apenas um estado por vez.<br>
+                <br>O emaranhamento é outro fenômeno quântico crucial, onde qubits tornam-se interdependentes, compartilhando informações de tal maneira que o estado de um qubit instantaneamente afeta o estado do outro, independentemente da distância entre eles. Isso cria uma ligação quântica que permite a sincronização de informações de forma instantânea, possibilitando uma comunicação mais eficiente e uma capacidade de processamento inigualável pelos sistemas clássicos. Em conjunto, a superposição e o emaranhamento formam a base para a capacidade extraordinária da computação quântica em resolver problemas complexos, como a fatoração de grandes números e a simulação de sistemas quânticos.<br>
+                <br>Na imagem vemos o chip do dispositivo Sycamore, com 53 qubits, feito pela Google "O computador quântico supercondutor".
+            </p>
+        </div>
+        <div class="box">
+            <img src="src/img/chipqubit.jpg" alt="Imagem Responsiva">
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="src/img/chipqubit.jpg" alt="Imagem Responsiva">
+        </div>
+        <div class="box">
+            <h1>Como funciona?</h1>
+            <p>A computação quântica usa princípios da mecânica quântica para processar informações. Ao contrário dos bits clássicos, os qubits podem existir em superposição de 0 e 1 simultaneamente. Isso, junto com o entrelaçamento, oferece potencial para cálculos mais eficientes em certas tarefas.<br>
+                Na imagem vemos o chip do dispositivo Sycamore, com 53 qubits, feito pela Google "O computador quântico supercondutor".</p>
+        </div>
+    </div>
+</body>
+</html>

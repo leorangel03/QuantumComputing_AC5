@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>QuantumComputing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Computação Quântica</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="aplicacoes.html">Aplicações</a></li>
+                <li><a href="desafios.html">Desafios</a></li>
+                <li><a href="#">Teoria</a></li>
+                <li><a href="#">Comunidade</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="box0">
+                <h1>Como ingressar na área</h1>
+                <p>
+                    Atualmente não há um mercado consolidado para área da computação quântica entretanto com seu acelerado desenvolvimento, em um futuro próximo há grandes possiblidades de surgir oportunidades profissionais nesta área. E para isso é imprescindível formações que te ajudaram a agarrar essas oportunidades, então nessa página iremos instruí-lo a quais instituiçoes e cursos você deve fazer, além disso iremos propor um guia passo a passo para você começar a aprender!
+                    <br><br>No Brasil, ainda não existem muitas opções de cursos de graduação e pós-graduação em computação quântica, mas há algumas instituições que oferecem programas de formação nessa área ou até cursos livres que se tornam muito efecientes. 
+                </p>
+            </div>
+            <div class="box">
+                <h1>Requisitos </h1>
+                <p> 
+                    <b>Hard Skills:</b>
+                    <br>Física, mecânica quântica, números binários, circuitos e algoritmos quanticos, regressão e agrupamento, machine learning, python, conceitos basicos de IA
+                    <br><br><b>Graduações ou pós graduações compátiveis:</b>
+                    <br>- Bacharel em Física (graduação)
+                    <br>- Bacharel em Ciências da computação (graduação)
+                    <br>- Bacharel em Engenharia da computação (graduação)
+                    <br>- Computação Quântica (pós-graduação)
+                    <br>- Física Computacional (pós-graduação)
+                </p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="box2">
+                <h1>Cursos Livres</h1>
+                <p><b>Computação Quântica: Fundamentos e aplicações:</b>
+                    <br>
+                    <br>
+                    <a href="https://www.cce.puc-rio.br/sitecce/website/website.dll/folder?nCurso=computacao-quantica:-fundamentos-e-aplicacoes&nInst=cce">
+                        <button class="cta-button">PUC</button>
+                    </a>
+                    <a href="https://www.fiap.com.br/shift/curso/tecnologia/computacao-quantica-fundamentals-e-algorithms-hands-on/">
+                        <button class="cta-button">FIAP</button>
+                    </a>
+                    <br>
+                    <br><b>Lista de cursos pela ÛDEMY:</b>
+                    <br>
+                    <br>
+                    <a href="https://www.udemy.com/pt/topic/quantum-computing/">
+                        <button class="watch-video-btn">
+                            <i class="fas fa-play"></i>ACESSE
+                        </button>
+                    </a>
+                </p>
+            </div>
+            <div class="box2">
+                <h1>Depoimento de profissional na área</h1>
+                <p>
+                    De acordo com Barbara Amaral, pesquisadora da Universidade de São Paulo (USP):<br>
+                    <br>
+                    “Havia muitas promessas, houve alguns avanços experimentais, mas nada que trouxesse um grande otimismo de que iríamos ter um computador quântico funcional resolvendo alguma coisa importante. Faltava um marco, mas ele chegou em 2019, com o Google.<br>
+                    <b>Com esse novo impulso, as empresas passaram a mirar a computação quântica porque enxergam nela um caminho inevitável de transformação dos negócios."</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Projeto recomendado</h1>
+                <p>
+                    <b>Apresentando a ferramenta: </b>O Quantum Information Software Development Kit (<b>Qiskit</b>) é uma estrutura computacional de código aberto desenvolvida para funcionar em diferentes linguagens de programação como <b>Python, Swift e JavaScript</b>, fornecendo as ferramentas necessárias para a criação de <b>algoritmos quânticos</b>, seguindo um modelo de circuito para computação quântica universal, e a sua execução em dispositivos quânticos reais usando o acesso remoto aos hardwares disponibilizados através do IBMQ.
+                    Além do Qiskit voce irá utilizar a linguagem de programação Python, e um software para o desenvolvimento do algoritmo (recomendamos o Jupyner juntamente ao Anaconda) 
+                    <br>
+                    <br><b>Descrição do projeto: </b>Fornecer uma breve introdução aos conceitos fundamentais de computação quântica, usando os ambientes computacionais do Qiskit. Desvendando os conceitos de qubits, emaranhamento quântico, circuitos e algoritmos.<br>
+                    <br>A seguir temos a imagem do resultado final que é a execução do circuito quantico desenvolvido, em um computador clássico (simulando um quantico pelo Qiskit AER) e ver o que acontece quando simulamos em um computador quântico real.
+                </p>
+            </div>
+            <div class="box3">
+                <img src="src/img/cxq.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Experiências práticas</h1>
+                <p>Nessa experiencia iremos desenvolver o circuito quantico referente aos resultados do projeto recomendado anteriormente.<br> 
+                    <br>
+                    Para realizarmos o desenvolvimento desse circuito é necessário o uso da API do IBMQ ("computador quantico virtual" forneceido pela IBM para fundos academicos), para voce adquirir o valor do token da API acesse: <a href="https://quantum-computing.ibm.com/account">https://quantum-computing.ibm.com/account</a>.<br>
+                    <br>
+                    Além disso como foi dito anteriormente iremos utilizar o software livre Jupyter Notebook juntamente do Anaconda em Python (linguagem projetada para ser de fácil leitura, com rápido desenvolvimento de código e de fácil compreensão) para o desenvolvimento da experiencia.<br>
+                    <br>
+                    Nas imagens a seguir iremos ver todo o desenvolvimento da experiencia do circuito, com as celulas de códigos já executadas. 
+                </p>
+            </div>
+            <div class="box3">
+                <img src="src/img/circuit1.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img src="src/img/circuit2.png" alt="Imagem Responsiva">
+            </div>
+            <div class="box3">
+                <img src="src/img/circuit3.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>QuantumComputing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Computação Quântica</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imersao.html">Imersão</a></li>
+                <li><a href="aplicacoes.html">Aplicações</a></li>
+                <li><a href="desafios.html">Desafios</a></li>
+                <li><a href="#">Teoria</a></li>
+                <li><a href="#">Comunidade</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="box0">
+                <h1>O que é</h1>
+                <p>A computação quântica funciona aproveitando os princípios da mecânica quântica para realizar problemas complexos com mais agilidade. Temos dois fundamentos que compõe a QC: <b>SUPERPOSIÇÃO</b> que se resume em qubits, existindo em múltiplos estados simultaneamente, permitindo que a informação seja processada de maneira paralela e o <b>EMARANHAMENTO</b> outro fenômeno quântico crucial, onde qubits tornam-se interdependentes, compartilhando informações de tal maneira que o estado de um qubit instantaneamente afeta o estado do outro, independentemente da distância deles. <br>
+                    <br>Esses dois fundamentos cria uma ligação quântica que permite a sincronização de informações de forma instantânea, possibilitando uma comunicação mais eficiente e uma <b>capacidade de processamento inigualável pelos sistemas clássicos.</b><br>
+                    <br>Na imagem vemos o computador supercondutor feito pela Google (Sycamore), com 53 qubits.
+                </p>
+            </div>
+            <div class="box">
+                <img src="src/img/syncamore.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="box2">
+                <img src="src/img/qubit-bit.png" alt="Imagem Responsiva">
+            </div>
+            <div class="box2">
+                <h1>Como funciona um Qubit</h1>
+                <p>
+                    Como percebemos o Qubit é fundamental para o funcionamento do computador quantico pois ele é a unidade básica da QC. Assim como na computação clássica temos <b>o bit tradicional que pode estar em somente dois estados 0 ou 1</b> (passando tensão elétrica ou não), na QC temos <b>o Qubit podendo representar 0, 1 ou ambos simultaneamente</b> isso possibilita um processamento paralelo e <b>torna o mais potente do que a computação clássica, como falamos anteriormente.</b><br>
+                    <br>Fazendo uma analogia imagine uma bola em uma mesa: no mundo clássico, ela estaria em um estado específico, seja parada (0) ou em movimento (1). Em contraste, um qubit seria como uma bola que pode estar em uma superposição desses estados, rolando e parada simultaneamente. Isso reflete a capacidade do qubit de representar 0, 1 ou ambos ao mesmo tempo.
+                </p>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Entendendo o termo quântico</h1>
+                <p>
+                    Relacionado diretamente a física quântica essa é um ramo da física que estuda o comportamento das partículas subatômicas e como elas interagem com a energia. Além disso partículas subatômicas podem exibir comportamentos paradoxais(contrariando os princípios básicos), como estar em múltiplos estados simultaneamente o que explica o fundamento da SUPERPOSIÇÃO e influenciam instantaneamente outras partículas entrelaçadas, independentemente da distância entre elas explicando o EMARANHAMENTO. Esses fenômenos desafiam nossa intuição clássica e formam a base para avanços na área da QC. <br>
+                    Caso queira se aprofundar na física qûantica assista um video com mais detalhes <a href="https://www.google.com/search?q=fisica+quantica&source=lmns&tbm=vid&bih=664&biw=1366&hl=pt-BR&sa=X&ved=2ahUKEwj7oIenldiCAxXeULgEHQsWBw4Q_AUoAnoECAEQAg#fpstate=ive&vld=cid:e330a3ec,vid:eA1E2HGdbKg,st:0">CLICANDO AQUI</a>.
+                </p>
+            </div>
+            <div class="box3">
+                <img src="src/img/quantumfisica.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

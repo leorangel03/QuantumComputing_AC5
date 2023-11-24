@@ -6,6 +6,7 @@
 }
 body {
     font-family: Arial, sans-serif;
+    background-color: #224661;
 }
 .navbar {
     background-color: rgba(34, 70, 97);
@@ -66,7 +67,7 @@ body {
     height: 100vh;
     justify-content: center;
 }
-.section-left, .section-right {
+.section-left, .section-right, .section-right2 {
     flex: 1;
     padding: 20px;
 }
@@ -81,6 +82,14 @@ body {
     margin-top: 25%;
     font-size: 44px;
     color: #fff;
+}
+.section-left h2{
+    margin-top: 15%;
+    font-size: 30px;
+    color: #fff;
+}
+.justop {
+    text-align: justify;
 }
 .section-left p{
     margin-top: 40px;
@@ -148,6 +157,129 @@ body {
 /* ==================================== FIM CONTAINER ==================================== */
 
 
+/* ==================================== INICIO DO CONTAINER 'ABOUT.HTML' ==================================== */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    margin: 2px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: rgba(40, 97, 140, 0.588)  ;
+    border-radius: 8px; 
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.box h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.box p{
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+}
+.box a {
+    color: #fff;
+}
+.box0 {
+    flex: 1;
+    padding: 20px;
+    margin: 2px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    background-color: rgba(40, 97, 140, 0.588)  ;
+    border-radius: 8px;
+}
+.box0 h1 {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.box0 p{
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box2 {
+    flex: 1;
+    padding: 20px;
+    margin: 2px;
+    box-sizing: border-box;
+    background-color: rgba(40, 97, 140, 0.588)  ;
+    border-radius: 8px;
+}
+.box2 h1 {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+.box2 p{
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.box3 {
+    flex: 1;
+    padding: 20px;
+    margin: 2px;
+    box-sizing: border-box;
+    background-color: rgba(40, 97, 140, 0.588)  ;
+    border-radius: 8px;
+}
+.box3 h1 {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+.box3 p{
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+}
+
+.box3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.box3 a {
+    color: #fff;
+}
+/* ==================================== FIM DO CONTAINER ABOUT.HTML ==================================== */
+
+
 /* ==================================== INICIO LAYOUT RESPONSIVO ==================================== */
 @media screen and (max-width: 768px) {
     /* Inicio Menu responsivo */
@@ -159,7 +291,7 @@ body {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: transparent;
+        background-color: #224661;
         position: absolute;
         top: 100px;
         left: 80%;
@@ -211,6 +343,11 @@ body {
         align-items: center;
     }
     .section-left h1{
+        margin-top: 0;
+        font-size: 32px;
+        color: #fff;
+    }
+    .section-left h2{
         margin-top: 0;
         font-size: 32px;
         color: #fff;
@@ -276,7 +413,40 @@ body {
             transform: translateY(-10px);
         }
     }/* Fim Divs do Index */
-  
+    .container {
+        flex-direction: column;
+    }
 
+    .box {
+        width: 100%;
+        margin-top: 2px;
+    }
+    .box0 {
+        width: 100%;
+        margin-top: 105px;
+    }
+    .box0 p{
+        text-align: left;
+    }
+    .container2 {
+        flex-direction: column-reverse;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+    .box2 p{
+        text-align: left;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+    .box3 p{
+        text-align: left;
+    }
 }
 /* ==================================== FIM LAYOUT RESPONSIVO ==================================== */
