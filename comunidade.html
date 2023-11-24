@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>QuantumComputing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Comunidade</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="imersao.html">Imersão</a></li>
+                <li><a href="aplicacoes.html">Aplicações</a></li>
+                <li><a href="desafios.html">Desafios</a></li>
+                <li><a href="teoria.html">Teoria</a></li>
+            </ul>
+        </nav>
+
+        <div class="coment">
+            <div class="input-coment">
+                <h2>Deixe seu comentário</h2>
+                <input type="text" id="nameInput" placeholder="Seu nome">
+                <textarea id="commentInput" placeholder="Seu comentário"></textarea>
+                <button class="cta-button" onclick="adicionarComentario()">Enviar</button>
+            </div>
+            <div class="comentarios-coment" id="comentariosContainer">
+                <h2>Comentários</h2>
+            </div>
+        </div>
+        <script src="src/main.js"></script>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>

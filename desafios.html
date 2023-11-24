@@ -9,7 +9,7 @@
     <body>
         <nav class="navbar">
             <div class="logo">
-                <h1>Computação Quântica</h1>
+                <h1>Desafios</h1>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <div class="bar"></div>
@@ -21,14 +21,14 @@
                 <li><a href="about.html">Sobre</a></li>
                 <li><a href="imersao.html">Imersão</a></li>
                 <li><a href="aplicacoes.html">Aplicações</a></li>
-                <li><a href="#">Teoria</a></li>
-                <li><a href="#">Comunidade</a></li>
+                <li><a href="teoria.html">Teoria</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
             </ul>
         </nav>
         
         <div class="container">
             <div class="box0">
-                <h1>Desafios</h1>
+                <h1>Dificuldades</h1>
                 <p>
                     A dificuldade em construir e manter os qubits (unidades de informação quântica) em um estado coerente e controlado.
                     <br>
@@ -38,7 +38,7 @@
                 </p>
             </div>
             <div class="box">
-                <h1>Outros desafios</h1>
+                <h1>Outras dificuldades</h1>
                 <p>
                     A dificuldade em lidar com perturbações externas, como ruído e vibrações, que podem causar erros nos cálculos quânticos, e ainda não existe uma forma confiável de corrigir erros.
                     <br>
@@ -68,6 +68,29 @@
                 <img src="src/img/dores.png" alt="Imagem Responsiva">
             </div>
         </div>
+
+        <div class="container2">
+            <div class="box2">
+                <iframe width="560" height="360" src="https://www.youtube.com/embed/BpXJiawgKkM?si=7uVjI7Z6cVWa6pPr&amp;start=428" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="box2">
+                <h1>Como contribuir para o avanço da QC</h1>
+                <p>
+                    Para o avanço da computação quântica requer um engajamento técnico em várias frentes. E a unica maneira para voce ser contribuite dessa revolução técnológica é o <b>CONHECIMENTO</b>, segue uma sequencia de ações que te levarão a isso:<br>
+                    <br>Estudar áreas fundamentais, como física quântica, matemática e ciência da computação.<br>
+                    <br>Compreensão sólida dos conceitos de superposição, emaranhamento, operações quânticas e algoritmos quanticos.<br>
+                    <br>Explorar linguagens de programação quântica, como Qiskit, Q# ou outras, permite a familiarização com a codificação para computadores quânticos.<br>
+                    <br>Participar de cursos, workshops e grupos de pesquisa dedicados à computação quântica oferece oportunidades para aprofundar o conhecimento e contribuir para o desenvolvimento de novos algoritmos ou métodos de correção de erros.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
 
     </body>
 </html>

@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>QuantumComputing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Teoria</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="imersao.html">Imersão</a></li>
+                <li><a href="aplicacoes.html">Aplicações</a></li>
+                <li><a href="desafios.html">Desafios</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="box0">
+                <h1>Matemática do QUBIT</h1>
+                <p>
+                    Como sabemos a estrutura básica de informação na computação clássica é o bit, a estrutura análoga na
+                    computação quântica é o bit quântico, que é usualmente chamado de q-bit (qbit, qubit ou quibit). <br>
+                    <br>
+                    Um qubit é um estado quântico da forma (Notação de Dirac):<br>
+                    <br>
+                    |ψi = α|0i + β|1i<br>
+                    <br>
+                    Onde α, β ∈ C (números complexos), as amplitudes, com |α|² + |β|² = 1 e {|0i, |1i} é uma base que expande H². Essa base é chamada de base computacional e pode ser representada por notação matricial como segue:<br>
+                    <br>|0| = [1] e |1| = [0]<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1]
+                </p>
+            </div>
+            <div class="box">
+                <h1>Ao sofrer medição</h1>
+                <p>
+                    Quando sofre uma medição, o q-bit |ψi pode colapsar para o estado |0| com probabilidade |α|², ou para |1| com probabilidade |β|², explicando a superposição.<br>
+                    <br>O vetor |ψi é chamado de superposição dos vetores, com amplitudes α e β. <br>
+                    <br>Em mecânica quântica, o vetor é também chamado de estado [PLeNM12].<br>
+                    <br>Veja apartir desses conceitos outra forma de notação da formula do qubit:<br>
+                    <br>|ψi = α|0| + β|1|=[α]
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[β]
+                </p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="box2">
+                <img src="src/img/bloch.png" alt="Imagem Responsiva">
+            </div>
+            <div class="box2">
+                <h1>Vetor de Bloch</h1>
+                <p>
+                    O vetor de Bloch é uma representação geométrica dos estados de um qubit em um espaço tridimensional, permitindo uma visualização intuitiva dos estados quânticos. Esse conceito é fundamental na compreensão e na manipulação dos qubits em computação quântica.<br>
+                    <br>
+                    Em um sistema de qubit, a esfera de Bloch é uma esfera unitária onde cada ponto representa um estado possível do qubit. O vetor de Bloch é uma representação que mapeia os estados possíveis do qubit nessa esfera.<br>
+                    <br>
+                    A esfera de Bloch oferece uma maneira visual de entender a transformação de um qubit por meio de portas quânticas (portões quânticos) e como diferentes operações afetam sua posição na esfera, facilitando a compreensão das transformações quânticas e das operações realizadas em um computador quântico.
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Explicação do vetor de Bloch</h1>
+                <p>
+                    <br>
+                    Um qubit pode ser descrito em termos de dois ângulos, θ e φ, que determinam sua posição na esfera de Bloch. O ângulo θ descreve a inclinação do qubit a partir do eixo z (representando os estados |0⟩ e |1⟩), enquanto o ângulo φ determina a rotação em torno do eixo z.
+                    <br>
+                    <br>O estado do qubit é expresso por:<br>
+                    <br>
+                    ψ⟩=cos(θ÷2​)∣0⟩ + eiϕ sin(θ÷2)∣1⟩<br>
+                    <br>
+                    Para o caso específico de um qubit clássico no estado |0⟩ ou |1⟩, o vetor de Bloch é representado nos polos da esfera. Qualquer estado intermediário ou superposição é representado em algum ponto no interior da esfera.
+                </p>
+            </div>
+            <div class="box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ytKI5Ys1_RY?si=C4SX7iQ4f5L8Zf5G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>
