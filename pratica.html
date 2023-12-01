@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>QuantumComputing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Imersão</h1>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="imersao.html">Imersão</a></li>
+                <li><a href="aplicacoes.html">Aplicações</a></li>
+                <li><a href="desafios.html">Desafios</a></li>
+                <li><a href="teoria.html">Teoria</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="box0">
+                <h1>IBM Qunatum Plataform</h1>
+                <p>Para acessar a IBM Quantum Platform, você deverá criar uma conta (no link disponibilzado a seguir). Em seguida, visite o site da IBM Quantum Experience e faça login com suas credenciais. Uma vez dentro da plataforma, você terá acesso ao ambiente de desenvolvimento Qiskit, onde pode explorar os simuladores quânticos disponíveis e até mesmo executar programas em processadores quânticos reais por meio da nuvem. A plataforma oferece uma interface intuitiva e recursos educacionais, permitindo que você aprenda, experimente e desenvolva algoritmos quânticos, além de participar de uma comunidade ativa de entusiastas e profissionais interessados na computação quântica.<br>
+                    <br>A seguir voce tem um video com um tutorial de como se cadastrar e acessar o IBM Quantum Plataform:<br>
+                    <br>
+                    <a href="https://quantum.ibm.com/">
+                        <button class="cta-button">Acesse aqui</button>
+                    </a>
+                </p>
+            </div>
+            <div class="box">
+                <video width="640" height="360" controls>
+                    <source src="src/img/tutorial.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Hello World Quantico</h1>
+                <p>Voce irá criar um circuito quântico simples que consiste em um qubit e uma porta de Hadamard, que coloca o qubit em uma superposição de |0⟩ e |1⟩. Depois disso, você pode medir o qubit para obter um resultado probabilístico, que pode ser |0⟩ ou |1⟩. <br>
+                    <br>Finalmente, você pode executar o circuito em um simulador quântico ou em um processador quântico real disponível na IBM Quantum Platform. Este processo simples permite que você dê os primeiros passos na programação quântica e compreenda os princípios básicos de criação e execução de circuitos quânticos usando Python e o Qiskit.<br>
+                    <br>
+                    A seguir um video de como desenvolvemos o algoritmo e as imagens dos códigos:
+                </p>
+            </div>
+            <div class="box3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v6fZgAF-Le8?si=dxCcCbCI7nP2ct3e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img src="src/img/hw1.png" alt="Imagem Responsiva">
+            </div>  
+            <div class="box3">
+                <img src="src/img/hw2.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img src="src/img/hw3.png" alt="Imagem Responsiva">
+            </div>  
+            <div class="box3">
+                <img src="src/img/hw4.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img src="src/img/hw5.png" alt="Imagem Responsiva">
+            </div>  
+            <div class="box3">
+                <img src="src/img/hw6.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <h1>Circuito Quantico</h1>
+                <p>Nessa experiencia iremos desenvolver o circuito quantico referente aos resultados do projeto recomendado na pagina de imersão.<br> 
+                    <br>
+                    Para realizarmos o desenvolvimento desse circuito é necessário o uso da API do IBMQ, no tutorial foi ensinado com pegar essa chave.<br>
+                    <br>
+                    Além disso como foi dito anteriormente iremos utilizar o Quantum Lab pelo Jupyter Notebook na linguagem de Python (projetada para ser de fácil leitura, com rápido desenvolvimento de código e de fácil compreensão) para o desenvolvimento da experiencia.<br>
+                    <br>
+                    Nas imagens a seguir iremos ver todo o desenvolvimento da experiencia do circuito, com as celulas de códigos já executadas. 
+                </p>
+            </div>
+            <div class="box3">
+                <img src="src/img/circuit1.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img src="src/img/circuit2.png" alt="Imagem Responsiva">
+            </div>  
+            <div class="box3">
+                <img src="src/img/circuit3.png" alt="Imagem Responsiva">
+            </div>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>
